@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+
+<html>
+<style>
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 15px;
+  border-radius: 5px;  
+  background: #FE58A3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%; 
+  background: #F69DC5;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #F69DC5;
+  cursor: pointer;
+}
+body {
+  background: #F4A9EE;
+}
+p {
+  border: 2px;
+  text-align: center;
+}
+h1 {
+  text-align: center;
+}
+h3 {
+  text-align: center;
+}
+h2 {
+  text-align: center;
+  border: 250px;
+}
+h5 {
+  text-align: center;
+  border-radious: 45%;
+}
+div {
+  text-align: center;
+}
+/*.short&tall {
+  display: flex;
+  justify-content: space-between;
+}*/
+</style>
+
+<head>
+  <title>People Changer</title>
+</head>
+<body>
+  <h1>People Changer!</h1>
+  <h3>The app to help you make peoplr, better.</h3>
+  
+  <h2>The Basics</h2>
+  
+  <h5 class="STR">Strength</h5>
+  <div class="slidecontainer">
+    <input type="range" min="0" max="100" value="50" class="slider" id="myRange">
+  </div>
+  
+  <h5 class="DEX">Dexterity</h5>
+  <div class="slidecontainer">
+    <input type="range" min="0" max="100" value="50" class="slider" id="myRange">
+  </div>
+  
+    <h5 class="CON">Constitution</h5>
+  <div class="slidecontainer">
+    <input type="range" min="0" max="100" value="50" class="slider" id="myRange">
+  </div>
+  
+  <h5 class="INT">Intelligence</h5>
+  <div class="slidecontainer">
+    <input type="range" min="0" max="100" value="50" class="slider" id="myRange">
+  </div>
+  
+  <h5 class="WIS">Wisdom</h5>
+  <div class="slidecontainer">
+    <input type="range" min="0" max="100" value="50" class="slider" id="myRange">
+  </div>
+  
+  <h5 class="CHR">Charisma</h5>
+  <div class="slidecontainer">
+    <input type="range" min="0" max="100" value="50" class="slider" id="myRange">
+  </div>
+  
+  <h2>Advanced</h2>
+  
+  <h5 class="AGE">Age</h5>
+  <div class="slidecontainer">
+    <input type="range" min="18" max="500" value="259" class="slider" id="myRange">
+    <div>
+      <span style="float:left;">18</span> <span style="float: center;">259</span> <span style="float:right;">500</span>
+    </div>
+  </div>
+ 
+  <h5 class="AWR">Awareness</h5>
+  <div class="slidecontainer">
+    <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+    <div>
+      <span style="float:left;">?</span> <span style="float:right;">Hyper</span>
+    </div>
+  </div>
+  
+  <h5 class="EMST">Emotional Stability</h5>
+  <div class="slidecontainer">
+    <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+    <div>
+      <span style="float:left;">Unstable</span> <span style="float:right;">Stable</span>
+    </div>
+  </div>
+
+    <h5 class="WEI">Weight</h5>
+  <div class="slidecontainer">
+    <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+    <div>
+      <span style="float: left;">Emaciated</span> <span style="float: right;">Extreme Obesity</span>
+    </div>
+  </div>
+  
+  <h5 class="HEI">Height</h5>
+  <div class="slidecontainer">
+    <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+    <div class="short&tall">
+      <span style="float: left;">Short</span> <span style="float: right;">Tall</span>
+    </div>
+  </div>
+  
+  <h5 class="HL">Hair Length</h5>
+  <div class="slidecontainer">
+    <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+    <div>
+      <span style="float:left;">Shaven</span> <span style="float:right;">Rapunzell</span>
+    </div>
+  </div>
+
+  <h5 class="">Chest/Breast</h5>
+  <div class="slidecontainer">
+    <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+    <div>
+      <span style="float:left;">22AA</span> <span style="float:center;">62MM</span> <span style="float:right;">102ZZZ</span>
+    </div>
+  </div>
+  
+
+</body>
+</html>
